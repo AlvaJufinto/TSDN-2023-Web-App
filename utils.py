@@ -29,7 +29,10 @@ def navbar_component():
     component = rf'''
             <nav class="container navbar" id="navbar">
                 <ul class="navlist">
-                {navbar_items}
+                    <p>Web Phising Detector by <h4>HappyVara</h4></p>
+                    <div class="nav-items">
+                        {navbar_items}
+                    </div>
                 </ul>
                 <div class="dropdown" id="settingsDropDown">
                     <div id="myDropdown" class="dropdown-content">

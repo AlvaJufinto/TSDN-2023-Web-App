@@ -1,29 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .navbar{
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Raleway', sans-serif;
     position: fixed;
     width: 100%;
-    background: #353535;
     z-index: 99999999999999999999;
     left: 0rem;
     top: 0rem;
-    height: 55px;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+}
+
+.navlist p {
+    margin: 25px 30px;
+    font-size: 16px !important;
+}
+
+h4 {
+    position: relative;
+    top: 11px;
+    right: 25px;
+}
+
+.nav-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    text-align: center;
 }
 
 .navitem{
-    float: left;
     display: block;
-    color: #f2f2f2 !important;
-    text-align: center;
-    padding: 20px 20px;
+    color: #BE123C !important;
     text-decoration: none !important;
-    border-bottom: 2px solid transparent;
-    font-size: 14px;
-    font-family: 'Trebuchet MS', sans-serif;
+    padding: 20px 25px;
 }
 
 .navitem:hover{
-    background-color: #333;
-    height: 55px !important;
+    color: #333 !important;
 }
 
 
