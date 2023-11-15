@@ -12,17 +12,17 @@
         body {
             display: flex;
             justify-content: center;
-            background-color: #DCFCE7;
+            background-color: {{result.bgColor}};
             align-content: center;
             align-items: center;
             height: 90vh;
             font-family: 'Quicksand', sans-serif;
         }
         h1 {
-            color: #14532D;
+            color: {{result.titleColor}};
         }
         p {
-            color: #16A34A;
+            color: {{result.descripColor}};
         }
         a {
             padding: 16px 32px;
@@ -41,8 +41,8 @@
 </head>
 <body>
     <div class="main">
-        <h1>Good Site (Situs Aman)</h1>
-        <p>{{ result }}</p>
+        <h1>{{ result.title }}</h1>
+        <p>{{ result.description }}</p>
     </div>
     <a href="/"><b>Kembali</b></a>
 </body>

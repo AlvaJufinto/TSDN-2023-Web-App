@@ -3,11 +3,17 @@ BAD_WORDING = "Peringatan! Situs ini dapat membahayakan keamanan Anda. Jangan me
 
 GOOD_SITE = {
     "title" : "Good Site (Situs Aman)",
+    "bgColor" : "#DCFCE7",
+    "titleColor" : "#14532D",
+    "descripColor" : "#16A34A",
     "description" : "Good Site (Situs Aman) Situs ini dianggap aman. Informasi dan tautan yang diberikan dapat diandalkan."
 }
 
 BAD_SITE = {
     "title" : "Bad Site (Situs Berbahaya)",
+    "bgColor" : "#FEE2E2",
+    "titleColor" : "#7F1D1D",
+    "descripColor" : "#DC2626",
     "description" : "Peringatan! Situs ini dapat membahayakan keamanan Anda. Jangan melanjutkan akses ke situs ini untuk melindungi diri Anda dari potensi ancaman."
 }
 
