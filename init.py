@@ -13,7 +13,7 @@ def home():
         load = str(DetectPhising(request.form['link']).predict())
         if(load == 'good'):
             return render_template("resultFound.html", result = GOOD_WORDING)
-        elif (load == 'Bad'):
+        elif (load == 'bad'):
             return render_template("resultFound.html", result = BAD_WORDING)
         return render_template("index.html", pencegahan = PENCEGAHAN, penanganan=PENANGANAN, link=link, error=load)
 
