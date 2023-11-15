@@ -1,0 +1,2 @@
+GOOD_WORDING = "According to our Analytic the Link Is Safe and is not categorized as phising or dangerous link";
+BAD_WORDING = "According to our Analytic the Link Is Not Safe, Provider Might Steal Your Personal Data";
