@@ -12,8 +12,9 @@
 </head>
 <body>
     {%if link != '' %}
-        <div class="modal">
-            {{ error }}
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>{{ error }}</p>
         </div>
     {% endif %}
     <div class="navbar">
@@ -98,6 +99,18 @@
     </div>
 
     <script>
+        const modal = document.querySelector('.modal-content');
+        const span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target != modal) {
+            modal.style.display = "none";
+        }
+        }
     </script>
 </body>
 </html>
