@@ -27,7 +27,7 @@ class DetectPhising:
             file.close()
             return model.predict(X_predict)[0]
         except Exception:
-            raise Exception("Ooops, Seprtinya Terjadi Kesalahan Pada Server ya Ngentot")
+            raise Exception("Ooops, Sepertinya Terjadi Kesalahan Pada Server")
         
 
     def _testIfLinkExists(self):
@@ -46,5 +46,5 @@ class DetectPhising:
         except rq.exceptions.MissingSchema:
             raise Exception(f"Oops, {self.link} Bukan Link Yang Valid, Mohon Masukkan Http/Https Juga")
         except Exception:
-            raise Exception("Oops, Sepertinya Kami Mengalami Issue Dalam Melakukan Request Terhadap url")
+            raise Exception("Oops, Sepertinya Kami Mengalami Issue Dalam Melakukan Request Terhadap URL")
             
