@@ -1,2 +1,2 @@
-GOOD_WORDING = "According to our Analytic the Link Is Safe and is not categorized as phising or dangerous link";
-BAD_WORDING = "According to our Analytic the Link Is Not Safe, Provider Might Steal Your Personal Data";
+GOOD_WORDING = "Situs ini dianggap aman. Informasi dan tautan yang diberikan dapat diandalkan.";
+BAD_WORDING = "Peringatan! Situs ini dapat membahayakan keamanan Anda. Jangan melanjutkan akses ke situs ini untuk melindungi diri Anda dari potensi ancaman.";
