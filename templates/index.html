@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    {%if link != '' %}
+        <div class="modal">
+            {{ error }}
+        </div>
+    {% endif %}
     <div class="navbar">
         <div class="nbLeft">
             <p>
@@ -37,8 +42,8 @@
                 <h1>Temukan Jawabannya di Website Kami</h1>
             </div>
             <form action="/" method="post" class="inputText">
-                <input class="input" type="text" placeholder="Paste link yang anda salin disini " name="link">
-                <input type="submit" name="" value="Deteksi" class="search">
+                <input class="input" type="text" placeholder="Paste link yang anda salin disini " name="link" autocomplete="off" value="{{ link }}" >
+                <input type="submit" name="" value="Deteksi" class="search" id="sbmt">
             </form>
         </div>
 
@@ -47,14 +52,52 @@
                 <h1>Tips dan trik jitu mencegah dan menangani tindak laku <i>Phishing</i></h1>
             </div>
             <div class="preventiveAction">
-                <h4>Tindak Pencegahan</h4>
+                <h4 id="pencegahan">Tindak Pencegahan</h4>
                 <div class="section">
-                    <div>
-                        
-                    </div>
+                    {% for i in pencegahan %}
+                        <div class="pencegahanCard">
+                            <h1 class="pcCounter">
+                                {{ i.no }}
+                            </h1>
+
+                            <div class="pcCounterCard">
+                                <h2 class="pcTitle">
+                                    {{ i.title }}
+                                </h2>
+                                <p class="pcCard">
+                                    {{ i.contain }}
+                                </p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="preventiveAction">
+                <h4 id="pencegahan">Tindak Penanganan</h4>
+                <div class="section">
+                    {% for i in penanganan %}
+                        <div class="pencegahanCard">
+                            <h1 class="pcCounter">
+                                {{ i.no }}
+                            </h1>
+
+                            <div class="pcCounterCard">
+                                <h2 class="pcTitle">
+                                    {{ i.title }}
+                                </h2>
+                                <p class="pcCard">
+                                    {{ i.contain }}
+                                </p>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+    </script>
 </body>
 </html>

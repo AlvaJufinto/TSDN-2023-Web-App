@@ -26,26 +26,25 @@ class DetectPhising:
             X_predict = [self.link.replace("https://", "").replace("http://", "")]
             file.close()
             return model.predict(X_predict)[0]
-        except Exception as e:
-            print(e)
-            raise Exception("Oops, Seems Like We have Encountered an Issue")
+        except Exception:
+            raise Exception("Ooops, Seprtinya Terjadi Kesalahan Pada Server ya Ngentot")
         
 
     def _testIfLinkExists(self):
         if(self.link == None):
-            raise Exception("Please Insert Link First")
+            raise Exception("Mohon Masukkan Link Terlebih Dahulu")
 
         elif(self.link == ""):
-            raise Exception("Please Insert A Valid Link")
+            raise Exception("Maaf Link Tidak Boleh Kosong")
 
         try:
             r = rq.get(self.link, timeout=5)
             if(r.status_code == 404):
-                raise Exception("Oops We Couldn't Find the Requested Link")
+                raise Exception("Maaf Kami Tidak Dapat Menemukan Link Situs")
             
             return r.status_code
         except rq.exceptions.MissingSchema:
-            raise Exception(f"Oops, {self.link} Is Not A Valid Link, please make it (http/https)://{self.link}")
+            raise Exception(f"Oops, {self.link} Bukan Link Yang Valid, Mohon Masukkan Http/Https Juga")
         except Exception:
             raise Exception("Oops, Seems Like We have Encountered an Issue With Fetching the url")
             

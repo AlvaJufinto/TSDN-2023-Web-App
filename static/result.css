@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.idMain {
+    width: 100%;
+    height: 100vh;
+    background: url("../static/bg.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.bigText{
+    max-width: 900px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
