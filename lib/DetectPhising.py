@@ -46,5 +46,5 @@ class DetectPhising:
         except rq.exceptions.MissingSchema:
             raise Exception(f"Oops, {self.link} Bukan Link Yang Valid, Mohon Masukkan Http/Https Juga")
         except Exception:
-            raise Exception("Oops, Seems Like We have Encountered an Issue With Fetching the url")
+            raise Exception("Oops, Sepertinya Kami Mengalami Issue Dalam Melakukan Request Terhadap url")
             
