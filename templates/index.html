@@ -96,6 +96,17 @@
                 </div>
             </div>
         </div>
+
+        <div class="profiles">
+            <div class="container">
+                <h1>Team HappyVara</h1>
+                <div class="photos">
+                    {% for photo in photos %}
+                        <img src={{ photo.url }} alt="">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>

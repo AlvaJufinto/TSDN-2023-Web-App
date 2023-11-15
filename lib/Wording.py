@@ -77,3 +77,11 @@ PENANGANAN = [
         "contain": "Periksa tanda-tanda yang mengindikasikan keamanan situs web, seperti ikon gembok di bilah alamat browser, dan pastikan Anda berada di situs yang benar sebelum memasukkan informasi pribadi."
     }
 ]
+
+PHOTOS_URL = [
+    {"url": "static/syafiq.png"},
+    {"url": "static/noval.png"},
+    {"url": "static/fajar.png"},
+    {"url": "static/alva.png"},
+    {"url": "static/najmi.png"},
+]
