@@ -63,9 +63,9 @@
     cursor: pointer;
 }
 .contain {
-    width: 90vw;
-    margin-left: 0;
-    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .title {
     text-align: center;
@@ -78,17 +78,17 @@
     width: 42rem;
     color: #520B21;
 }
-
 .preventiveAction {
+    margin-left: 3rem;
+    margin-bottom: 80px;
 }
-
 .preventiveAction h4{
     margin-bottom: 20px;
 }
 
 .section {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 30px;
     flex-wrap: wrap;
 }
