@@ -1,219 +1,222 @@
+/** @format */
+
 #main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 100px;
-    font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 100px;
+  font-family: "Raleway", sans-serif;
 }
 .idMain {
-    width: 100%;
-    height: 85vh;
-    background: url("../static/bg.svg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  background: url("../static/bg.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  flex-direction: column;
 }
 .bigText {
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 1.2em;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 .inputText {
-    width: 95%;
-    height: 80px;
-    background: red;
-    margin-top: 40px;
-    overflow: hidden;
-    border-radius: 100px;
-    position: relative;
+  width: 95%;
+  height: 80px;
+  background: red;
+  margin-top: 40px;
+  overflow: hidden;
+  border-radius: 100px;
+  position: relative;
 }
 .inputText .input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 1.1em;
-    padding: 0px 30px 0px 30px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.1em;
+  padding: 0px 30px 0px 30px;
 }
-.inputText input:focus{
-    outline: none;
+.inputText input:focus {
+  outline: none;
 }
 .search {
-    outline: none;
-    position: absolute;
-    z-index: 100;
-    height: 100%;
-    right: 0px;
-    width: 14%;
-    min-width: 120px;
-    border-radius: 50px;
-    border: 10px solid white;
-    background: #BE123C;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
+  outline: none;
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  right: 0px;
+  width: 14%;
+  min-width: 120px;
+  border-radius: 50px;
+  border: 10px solid white;
+  background: #be123c;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
 }
-.search:hover{
-    cursor: pointer;
+.search:hover {
+  cursor: pointer;
 }
 .contain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title {
-    text-align: center;
-    margin-bottom: 64px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  margin-bottom: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .title h1 {
-    width: 42rem;
-    color: #520B21;
+  width: 42rem;
+  color: #520b21;
 }
 .preventiveAction {
-    margin-left: 9rem;
-    margin-bottom: 80px;
+  margin-left: 9rem;
+  margin-bottom: 80px;
 }
-.preventiveAction h4{
-    margin-bottom: 20px;
+.preventiveAction h4 {
+  margin-bottom: 20px;
 }
 
 .section {
-    display: flex;
-    justify-content: start;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-#pencegahan{
-    font-size: 1.4rem;
-    color: #520B21;
+#pencegahan {
+  font-size: 1.4rem;
+  color: #520b21;
 }
-.pcCounterCard{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.pcCounterCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.pencegahanCard{
-    width: 350px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    color: #E11D48;
-    border-radius: 10px;
+.pencegahanCard {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #e11d48;
+  border-radius: 10px;
 }
 .modal-content {
-    position: absolute;
-    background-color: #FEE2E2;
-    padding: 20px;
-    border-radius: 32px;
-    border: 1px solid black;
-    width: 80vw;
-    z-index: 9999;
-    left: 100px;
-    top: 100px;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
+  position: absolute;
+  background-color: #fee2e2;
+  padding: 20px;
+  border-radius: 32px;
+  border: 1px solid black;
+  width: 80vw;
+  z-index: 9999;
+  left: 100px;
+  top: 100px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-family: "Quicksand", sans-serif;
 }
 .close {
-    position: absolute;
-    color: #aaaaaa;
-    top: 0;
-    right: 22px;
-    font-size: 45px;
-    font-weight: bold;
+  position: absolute;
+  color: #aaaaaa;
+  top: 0;
+  right: 22px;
+  font-size: 45px;
+  font-weight: bold;
 }
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 .profiles {
-    width: 100%;
-    height: 70vh;
-    background: url("../static/bg.svg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  height: 70vh;
+  background: url("../static/bg.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 .profiles .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;
 }
-.photos img{
-    margin-right: 20px;
-    width: 15%;
+.photos img {
+  margin-right: 20px;
+  width: 15%;
 }
 .quotes {
-    color: #000;
-    text-align: center;
-    font-family: 'Fjord One', serif;
-    font-size: 36px;
-    letter-spacing: -0.684px;
-    margin-bottom: 46px;
+  color: #000;
+  text-align: center;
+  font-family: "Fjord One", serif;
+  font-size: 36px;
+  letter-spacing: -0.684px;
+  margin-bottom: 46px;
 }
 footer {
-    background: #520B21;
-    display: flex;
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    color: #fff;
+  background: #520b21;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
-    .bigText {
-        font-size: 0.8em
-    }
-    .title h1 {
-        width: 80%;
-        font-size: 22px;
-    }
-    .section {
-        justify-content: center;
-        align-content: center;
-    }
-    .preventiveAction {
-        margin-left: 0;
-        text-align: center;
-    }
-    .modal-content {
-        width: 90%;
-        left: 20px;
-    }
-    .photos img {
-        width: 25%;
-    }
-    .pencegahanCard {
-        width: 80%;
-    }
+  .bigText {
+    font-size: 0.8em;
+  }
+  .title h1 {
+    width: 80%;
+    font-size: 22px;
+  }
+  .section {
+    justify-content: center;
+    align-content: center;
+  }
+  .preventiveAction {
+    margin-left: 0;
+    text-align: center;
+  }
+  .modal-content {
+    width: 90%;
+    left: 20px;
+  }
+  .photos img {
+    width: 25%;
+  }
+  .pencegahanCard {
+    width: 80%;
+  }
 }

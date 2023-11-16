@@ -1,125 +1,129 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../static/navbar.css">
-    <link rel="stylesheet" href="../static/index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="../static/navbar.css" />
+    <link rel="stylesheet" href="../static/index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
     {%if link != '' %}
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>{{ error }}</p>
-        </div>
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>{{ error }}</p>
+    </div>
     {% endif %}
     <div class="navbar">
-        <div class="navbar-text">
-            <p>
-                Web Phising Detector By <b>HappyVara</b>
-            </p>
-        </div>
+      <div class="navbar-text">
+        <p>Web Phising Detector By <b>HappyVara</b></p>
+      </div>
     </div>
     <div id="main">
-        <div class="idMain">
-            <div class="bigText">
-                <img src="../static/logo.png" alt="">
-                <h1>Apakah Anda Yakin Situs yang Anda Kunjungi Aman?</h1>
-                <h1>Temukan Jawabannya di Website Kami</h1>
+      <div class="idMain">
+        <div class="bigText">
+          <img src="../static/logo.png" alt="" />
+          <h1>Apakah Anda Yakin Situs yang Anda Kunjungi Aman?</h1>
+          <h1>Temukan Jawabannya di Website Kami</h1>
+        </div>
+        <form action="/" method="post" class="inputText">
+          <input
+            class="input"
+            type="text"
+            placeholder="Paste link yang anda salin disini "
+            name="link"
+            autocomplete="off"
+            value="{{ link }}" />
+          <input
+            type="submit"
+            name=""
+            value="Deteksi"
+            class="search"
+            id="sbmt" />
+        </form>
+      </div>
+
+      <div class="contain">
+        <div class="title">
+          <h1>
+            Tips dan trik jitu mencegah dan menangani tindak laku
+            <i>Phishing</i>
+          </h1>
+        </div>
+        <div class="preventiveAction">
+          <h4 id="pencegahan">Tindak Pencegahan</h4>
+          <div class="section">
+            {% for i in pencegahan %}
+            <div class="pencegahanCard">
+              <h1 class="pcCounter">{{ i.no }}</h1>
+
+              <div class="pcCounterCard">
+                <h2 class="pcTitle">{{ i.title }}</h2>
+                <p class="pcCard">{{ i.contain }}</p>
+              </div>
             </div>
-            <form action="/" method="post" class="inputText">
-                <input class="input" type="text" placeholder="Paste link yang anda salin disini " name="link" autocomplete="off" value="{{ link }}" >
-                <input type="submit" name="" value="Deteksi" class="search" id="sbmt">
-            </form>
+            {% endfor %}
+          </div>
         </div>
 
-        <div class="contain">
-            <div class="title">
-                <h1>Tips dan trik jitu mencegah dan menangani tindak laku <i>Phishing</i></h1>
-            </div>
-            <div class="preventiveAction">
-                <h4 id="pencegahan">Tindak Pencegahan</h4>
-                <div class="section">
-                    {% for i in pencegahan %}
-                        <div class="pencegahanCard">
-                            <h1 class="pcCounter">
-                                {{ i.no }}
-                            </h1>
+        <div class="preventiveAction">
+          <h4 id="pencegahan">Tindak Penanganan</h4>
+          <div class="section">
+            {% for i in penanganan %}
+            <div class="pencegahanCard">
+              <h1 class="pcCounter">{{ i.no }}</h1>
 
-                            <div class="pcCounterCard">
-                                <h2 class="pcTitle">
-                                    {{ i.title }}
-                                </h2>
-                                <p class="pcCard">
-                                    {{ i.contain }}
-                                </p>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
+              <div class="pcCounterCard">
+                <h2 class="pcTitle">{{ i.title }}</h2>
+                <p class="pcCard">{{ i.contain }}</p>
+              </div>
             </div>
-
-            <div class="preventiveAction">
-                <h4 id="pencegahan">Tindak Penanganan</h4>
-                <div class="section">
-                    {% for i in penanganan %}
-                        <div class="pencegahanCard">
-                            <h1 class="pcCounter">
-                                {{ i.no }}
-                            </h1>
-
-                            <div class="pcCounterCard">
-                                <h2 class="pcTitle">
-                                    {{ i.title }}
-                                </h2>
-                                <p class="pcCard">
-                                    {{ i.contain }}
-                                </p>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
+            {% endfor %}
+          </div>
         </div>
+      </div>
 
-        <div class="profiles">
-            <div class="container">
-                <h1>Team HappyVara</h1>
-                <div class="photos">
-                    {% for photo in photos %}
-                        <img src={{ photo.url }} alt="">
-                    {% endfor %}
-                </div>
-            </div>
+      <div class="profiles">
+        <div class="container">
+          <h1>Team HappyVara</h1>
+          <div class="photos">
+            {% for photo in photos %}
+            <img src="{{" photo.url }} alt="" />
+            {% endfor %}
+          </div>
         </div>
+      </div>
 
-        <div class="quotes">
-            <p>“Where The Heart go, The Man should follow.”</p>
-            <p>~Eivor Wolf-Kissed~</p>
-        </div>
+      <div class="quotes">
+        <p>“Where The Heart go, The Man should follow.”</p>
+        <p>~Eivor Wolf-Kissed~</p>
+      </div>
 
-        <footer>
-            <p>Made with ❤️ by HappyVara Team </p>
-        </footer>
+      <footer>
+        <p>Made with ❤️ by HappyVara Team</p>
+      </footer>
     </div>
 
     <script>
-        const modal = document.querySelector('.modal-content');
-        const span = document.getElementsByClassName("close")[0];
+      const modal = document.querySelector(".modal-content");
+      const span = document.getElementsByClassName("close")[0];
 
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
-        window.onclick = function(event) {
-        if (event.target != modal) {
-            modal.style.display = "none";
-        }
-        }
+      //   window.onclick = function (event) {
+      //     if (event.target != modal) {
+      //       modal.style.display = "none";
+      //     }
+      //   };
     </script>
-</body>
+  </body>
 </html>
