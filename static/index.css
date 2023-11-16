@@ -136,6 +136,9 @@ body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
+.modal-content p {
+  pointer-events: none;
+}
 .close {
   position: absolute;
   color: #aaaaaa;
