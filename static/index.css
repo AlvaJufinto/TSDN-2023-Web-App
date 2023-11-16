@@ -1,5 +1,7 @@
 /** @format */
-
+body {
+  max-width: 100%;
+}
 #main {
   display: flex;
   flex-direction: column;
@@ -125,13 +127,14 @@
   width: 80vw;
   z-index: 9999;
   left: 100px;
-  top: 100px;
-  height: 60vh;
+  top: 150px;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 32px;
   font-family: "Quicksand", sans-serif;
+  text-align: center;
 }
 .close {
   position: absolute;

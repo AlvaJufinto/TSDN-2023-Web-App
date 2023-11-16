@@ -95,7 +95,7 @@
           <h1>Team HappyVara</h1>
           <div class="photos">
             {% for photo in photos %}
-            <img src="{{" photo.url }} alt="" />
+            <img src="{{ photo.url }}" alt="" />
             {% endfor %}
           </div>
         </div>
@@ -119,11 +119,11 @@
         modal.style.display = "none";
       };
 
-      //   window.onclick = function (event) {
-      //     if (event.target != modal) {
-      //       modal.style.display = "none";
-      //     }
-      //   };
+      window.onclick = function (event) {
+        if (event.target != modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>
